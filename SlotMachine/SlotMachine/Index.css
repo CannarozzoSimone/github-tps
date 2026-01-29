@@ -1,0 +1,54 @@
+.win-jackpot { color: #006400; font-weight: bold; }
+.win-double { color: #90EE90; }
+.lose { color: #ff4d4d; }
+
+body {
+    background: radial-gradient(circle, #5e5e7a 0%, #2e2e3a 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.Slot {
+    background-color: #2c2c34;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    text-align: center;
+    width: 350px;
+}
+
+.numeri {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+button#btn-gioca {
+    background-color: #ffcc00;
+    border: none;
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#Messaggio {
+    margin-top: 25px;
+    font-size: 20px;
+    min-height: 24px;
+}
+
+#Contatore {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #888;
+}
