@@ -38,16 +38,21 @@ function conferma() {
     }
 
     if (scelta == soluzioni[m]) {
-        alert("Corretto!");
+        coloraRisposta(scelta);
         punti++;
+        /*document.getElementById("ris1").innerHTML='<span style="background-color:green";></span>';*/
     } else {
         alert("Sbagliato!");
     }
 
     if (m < domanda.length - 1) {
         m++;
-        caricaDomanda();
+        setTimeout(()=>{caricaDomanda();}, 3000);
     } else {
         alert("Fine! punteggio finale: " + punti + "/" + domanda.length);
     }
+}
+function coloraRisposta(scelta){
+    document.getElementById("ris3").innerHTML='<span style="background-color:green";>Risposta corretta!!!!!!!!!!!!!!!!</span>';
+    setTimeout(()=>{document.getElementById("ris3").innerHTML='<input type="radio" name="risposta"> <span></span>';}, 3000);
 }
